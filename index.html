@@ -18,44 +18,98 @@
 
     <main id="game">
         <div class="container">
-            <p>Time Remaining: <span id="time">0</span> seconds</p>
+            <button class="btn btn-lg" id="start">Start</button>
+
+            <p id="clock">Time Remaining: <span id="timer">0</span> seconds</p>
 
             <div id="trivia">
                 <p class="question" data-trivia="1">Which one of the following countries surround Wakanda?</p>
 
-                <p class="answer">
-                    <input type="radio" data-correct name="trivia1" value="Uganda"> Uganda<br>
-                    <input type="radio" name="trivia1" value="Egypt"> Egypt<br>
-                    <input type="radio" name="trivia1" value="Somalia"> Somalia<br>
-                    <input type="radio" name="trivia1" value="Ghana"> Ghana
-                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" data-correct name="trivia1" value="Uganda" id="trivia11">
+                    <label class="form-check-label" for="trivia11">Uganda</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="trivia1" value="Egypt" id="trivia12">
+                    <label class="form-check-label" for="trivia12">Egypt</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="trivia1" value="Somalia" id="trivia13">
+                    <label class="form-check-label" for="trivia13">Somalia</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="trivia1" value="Ghana" id="trivia14">
+                    <label class="form-check-label" for="trivia14">Ghana</label>
+                </div>
 
                 <p class="question" data-trivia="2">In 2016, how many of the students on the Midtown School of Science and Technology's Academic Decathalon team went to Washington D.C.?</p>
 
-                <p class="answer">
-                    <input type="radio" name="trivia2" value="8"> 8<br>
-                    <input type="radio" data-correct name="trivia2" value="9"> 9<br>
-                    <input type="radio" name="trivia2" value="10"> 10<br>
-                    <input type="radio" name="trivia2" value="11"> 11
-                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="trivia2" value="8" id="trivia21">
+                    <label class="form-check-label" for="trivia21">8</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="trivia2" value="9" id="trivia22" data-correct>
+                    <label class="form-check-label" for="trivia22">9</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="trivia2" value="10" id="trivia23">
+                    <label class="form-check-label" for="trivia23">10</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="trivia2" value="11" id="trivia24">
+                    <label class="form-check-label" for="trivia24">11</label>
+                </div>
 
                 <p class="question" data-trivia="3">How many of Thanos' children survived his quest for the Infinity Gauntlet?</p>
 
-                <p class="answer">
-                    <input type="radio" name="trivia3" value="3"> 3<br>
-                    <input type="radio" name="trivia3" value="2"> 2<br>
-                    <input type="radio" data-correct name="trivia3" value="1"> 1<br>
-                    <input type="radio" name="trivia3" value="0"> 0
-                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="trivia3" value="3" id="trivia31">
+                    <label class="form-check-label" for="trivia31">3</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="trivia3" value="2" id="trivia32">
+                    <label class="form-check-label" for="trivia32">2</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" data-correct name="trivia3" value="1" id="trivia33">
+                    <label class="form-check-label" for="trivia33">1</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="trivia3" value="0" id="trivia34">
+                    <label class="form-check-label" for="trivia34">0</label>
+                </div>
 
                 <p class="question" data-trivia="4">Which song can be heard in the background when Thor is shown a holographic history of Sakaar?</p>
+                
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="trivia4" value="Immigrant Song" id="trivia41">
+                    <label class="form-check-label" for="trivia41">Immigrant Song</label>
+                </div>
 
-                <p class="answer">
-                    <input type="radio" name="trivia4" value="Immigrant Song"> Immigrant Song<br>
-                    <input type="radio" name="trivia4" value="Highway to Hell"> Highway to Hell<br>
-                    <input type="radio" name="trivia4" value="Mr. Blue Sky"> Mr. Blue Sky<br>
-                    <input type="radio" data-correct name="trivia4" value="Pure Imagination"> Pure Imagination
-                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="trivia4" value="Highway to Hell" id="trivia42">
+                    <label class="form-check-label" for="trivia42">Highway to Hell</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" data-correct name="trivia4" value="Mr. Blue Sky" id="trivia43">
+                    <label class="form-check-label" for="trivia43">Mr. Blue Sky</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="trivia4" value="Pure Imagination" id="trivia44">
+                    <label class="form-check-label" for="trivia44">Pure Imagination</label>
+                </div>
             </div>
         </div>
     </main>
