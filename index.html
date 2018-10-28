@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Totally Trivial MCU Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Totally Trivial MCU Trivia Game</h1>
+        </div>
+    </header>
+
+    <main id="game">
+        <div class="container">
+            <p>Time Remaining: <span id="time">0</span> seconds</p>
+
+            <div id="trivia">
+                <p class="question" data-trivia="1">Which one of the following countries surround Wakanda?</p>
+
+                <p class="answer">
+                    <input type="radio" data-correct name="trivia1" value="Uganda"> Uganda<br>
+                    <input type="radio" name="trivia1" value="Egypt"> Egypt<br>
+                    <input type="radio" name="trivia1" value="Somalia"> Somalia<br>
+                    <input type="radio" name="trivia1" value="Ghana"> Ghana
+                </p>
+
+                <p class="question" data-trivia="2">In 2016, how many of the students on the Midtown School of Science and Technology's Academic Decathalon team went to Washington D.C.?</p>
+
+                <p class="answer">
+                    <input type="radio" name="trivia2" value="8"> 8<br>
+                    <input type="radio" data-correct name="trivia2" value="9"> 9<br>
+                    <input type="radio" name="trivia2" value="10"> 10<br>
+                    <input type="radio" name="trivia2" value="11"> 11
+                </p>
+
+                <p class="question" data-trivia="3">How many of Thanos' children survived his quest for the Infinity Gauntlet?</p>
+
+                <p class="answer">
+                    <input type="radio" name="trivia3" value="3"> 3<br>
+                    <input type="radio" name="trivia3" value="2"> 2<br>
+                    <input type="radio" data-correct name="trivia3" value="1"> 1<br>
+                    <input type="radio" name="trivia3" value="0"> 0
+                </p>
+
+                <p class="question" data-trivia="4">Which song can be heard in the background when Thor is shown a holographic history of Sakaar?</p>
+
+                <p class="answer">
+                    <input type="radio" name="trivia4" value="Immigrant Song"> Immigrant Song<br>
+                    <input type="radio" name="trivia4" value="Highway to Hell"> Highway to Hell<br>
+                    <input type="radio" name="trivia4" value="Mr. Blue Sky"> Mr. Blue Sky<br>
+                    <input type="radio" data-correct name="trivia4" value="Pure Imagination"> Pure Imagination
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>
