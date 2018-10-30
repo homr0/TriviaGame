@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
+    <header class="mt-5">
+        <div class="container text-center p-3">
             <h1>Totally Trivial MCU Trivia Game</h1>
         </div>
     </header>
 
-    <main id="game">
-        <div class="container">
+    <main id="game" class="mb-5">
+        <div class="container text-center p-3">
             <div class="row">
                 <div class="col">
-                    <button class="btn btn-lg text-center" id="start">Start</button>
+                    <button class="btn btn-lg" id="start">Start</button>
                 </div>
             </div>
             
@@ -111,12 +111,12 @@
                     </div>
 
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" data-correct name="trivia4" value="Mr. Blue Sky" id="trivia43">
+                        <input class="form-check-input" type="radio" name="trivia4" value="Mr. Blue Sky" id="trivia43">
                         <label class="form-check-label" for="trivia43">Mr. Blue Sky</label>
                     </div>
 
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="trivia4" value="Pure Imagination" id="trivia44">
+                        <input class="form-check-input" type="radio" name="trivia4" data-correct value="Pure Imagination" id="trivia44">
                         <label class="form-check-label" for="trivia44">Pure Imagination</label>
                     </div>
                 </div>
@@ -124,12 +124,12 @@
 
             <div class="row">
                 <div class="col">
-                    <button class="btn btn-lg text-center" id="done">Done</button>
+                    <button class="btn btn-lg" id="done">Done</button>
                 </div>
             </div>
 
-            <div class="row" id="result">
-                <div class="col text-center">
+            <div class="row" id="results">
+                <div class="col">
                     <h2>All Done!</h2>
 
                     <p>
