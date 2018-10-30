@@ -2,15 +2,28 @@ $(document).ready(function() {
     // Variable that holds timer for countdown. 
     var timer;
 
-    // Game modes
-    const easy = { q: 5, t: 60};
-    const normal = { q: 10, t: 30};
-    const hard = { q: 15, t: 15};
-
     // Trivia object for holding trivia game properties
     var quiz = {
         questions: 4,
         time: 0,
+
+        // Game modes
+        mode: {
+            easy: {
+                q: 2,
+                t: 60
+            },
+
+            normal: {
+                q: 3,
+                t: 30
+            },
+
+            hard: {
+                q: 4,
+                t: 15
+            }
+        },
 
         trivia: [
             {
@@ -47,14 +60,55 @@ $(document).ready(function() {
                     "3", "2", "0"
                 ],
                 image: "assets/images/m19-nebula.png"
+            },
+
+            {
+                question: "Where did Scott Lang fall into the San Francisco Bay?",
+                answer: "Pier 39",
+                incorrect: [
+                    "Golden Gate Bridge", "San Francisco-Oakland Bay Bridge", "Embarcadero" 
+                ],
+                image: "assets/images/m20-antman-ferry.jpg"
             }
         ],
 
-        // Resets the number of questions, answers, and the time.
-        reset: function() {
-            quiz.questions = 4;
-            quiz.time = 30;
+        sequence: [],
 
+        // Random number generator
+        random: function(max) {
+            return Math.floor(Math.random() * max);
+        },
+
+        // Checks values to make sure they are unique within the array.
+        check: function(index, arr) {
+            for(let i = 0; i < arr.length; i++) {
+                if((index !== i) && (arr[index] == arr[i])) {
+                    return false;
+                }
+            }
+            return true;
+        },
+
+        // Sets up the quiz.
+        setup: function(level) {
+            // Sets the number of questions and the time limit depending on the mode.
+            quiz.questions = quiz.mode[level].q;
+            quiz.time = quiz.mode[level].t;
+            
+            // Sets up the sequence of questions.
+            quiz.sequence = [];
+
+            for(let i = 0; i < quiz.questions; i++) {
+                // Picks a random question and makes sure it's different from the other ones picked.
+                quiz.sequence.push(-1);
+                do {
+                    quiz.sequence[i] = quiz.random(quiz.trivia.length);
+                } while(!(quiz.check(i, quiz.sequence)))
+            }
+
+            console.log(quiz.sequence);
+
+            // Resets the number of correct, incorrect, and unanswered responses.
             $("#correct").text(0);
             $("#incorrect").text(0);
             $("#unanswered").text(0);
@@ -62,9 +116,14 @@ $(document).ready(function() {
             $("#timer").text(quiz.time);
         },
 
-        // Starts the timer
+        // Starts the timer.
         start: function() {
             timer = setInterval(quiz.count, 1000);
+        },
+
+        // Sets up the question to be asked
+        ask: function() {
+            
         },
 
         // Stops the timer and gets the results.
@@ -104,12 +163,17 @@ $(document).ready(function() {
             if(quiz.time == 0) {
                $("#done").trigger("click");
             }
+        },
+
+        // Generates a question from the trivia
+        generate: function() {
+
         }
     };
 
     // When "Start" is clicked, the timer begins and the questions are revealed.
-    $("#start").on("click", function() {
-        quiz.reset();
+    $("#start .mode").on("click", function() {
+        quiz.setup($(this).attr("data-mode"));
         $("#clock, #trivia, #done").show();
         $("#start, #result").hide();
         quiz.start();
