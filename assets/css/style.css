@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Bree Serif', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-#clock, #trivia, #done, #results {
+#clock, #trivia, #response, #results, #restart {
     display: none;
 }
 
@@ -18,9 +18,8 @@ header .container, #game .container {
     background-color: rgba(63, 63, 191, 0.6);
 }
 
-#trivia .question {
+#trivia #question, #start .mode {
     font-size: 150%;
-
 }
 
 button.btn {

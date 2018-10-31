@@ -40,22 +40,22 @@
                 <div class="col">
                     <p id="question"></p>
 
-                    <div class="form-check form-check-inline">
+                    <div class="form-check form-check-inline choice">
                         <input class="form-check-input" type="radio" name="trivia" value="" id="trivia1">
                         <label class="form-check-label" for="trivia1"></label>
                     </div>
 
-                    <div class="form-check form-check-inline">
+                    <div class="form-check form-check-inline choice">
                         <input class="form-check-input" type="radio" name="trivia" value="" id="trivia2">
                         <label class="form-check-label" for="trivia2"></label>
                     </div>
 
-                    <div class="form-check form-check-inline">
+                    <div class="form-check form-check-inline choice">
                         <input class="form-check-input" type="radio" name="trivia" value="" id="trivia3">
                         <label class="form-check-label" for="trivia3"></label>
                     </div>
 
-                    <div class="form-check form-check-inline">
+                    <div class="form-check form-check-inline choice">
                         <input class="form-check-input" type="radio" name="trivia" value="" id="trivia4">
                         <label class="form-check-label" for="trivia4"></label>
                     </div>
@@ -64,13 +64,23 @@
 
             <div class="row">
                 <div class="col">
-                    <button class="btn btn-lg" id="done">Done</button>
+                    <button class="btn btn-lg" id="restart">Restart</button>
+                </div>
+            </div>
+
+            <div class="row" id="response">
+                <div class="col">
+                    <h2>Correct!</h2>
+
+                    <p>The Correct Answer was: <span id="correctAnswer"></span></p>
+
+                    <img class="img-fluid" src="assets/images/vertical_cloth.png" alt="Hint here">
                 </div>
             </div>
 
             <div class="row" id="results">
                 <div class="col">
-                    <h2>All Done!</h2>
+                    <h2>All done, here's how you did:</h2>
 
                     <p>
                         Correct Answers: <span id="correct">0</span><br>
