@@ -172,7 +172,11 @@ $(document).ready(function() {
                 "alt": trivia.hint
             });
 
+            // Updates the answer
             quiz.answer = trivia.answer;
+
+            // Clears the current checked response
+            $("[name=trivia]:checked").prop("checked", false);
 
             // Shows the item
             $("#trivia").show();
