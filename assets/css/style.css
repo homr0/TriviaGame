@@ -15,16 +15,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header .container, #game .container {
-    background-color: rgba(63, 63, 191, 0.6);
+    background-color: rgba(191, 191, 191, 0.9);
 }
 
 #trivia #question, #start .mode {
     font-size: 150%;
 }
 
-button.btn {
-    background-color: rgba(255, 255, 255, 0.8);
+.btn.mode, #restart.btn {
+    background-color: rgba(0, 159, 159, 0.6);
+    color: rgba(63, 15, 15, 0.85);
 }
-button.btn:hover {
-    background-color: rgba(191, 191, 191, 0.8);
+
+.btn.mode:hover, #restart.btn:hover {
+    background-color: rgba(0, 216, 216, 0.6);
+    color: rgba(127, 31, 31, 0.85);
+}
+
+#trivia [type=radio] {
+    display: none;
+}
+
+#trivia [type=radio]:checked + label, #trivia [type=radio] + label:hover {
+    background-color: rgba(127, 0, 0, 0.7);
+    cursor: pointer;
+    color: rgba(227, 227, 227, 0.9);
+}
+
+#response img {
+    max-height: 350px;
+    width: auto;
 }
