@@ -5,28 +5,48 @@ $(document).ready(function() {
 
     // Trivia object for holding trivia game properties
     var quiz = {
-        questions: 4,
+        questions: 0,
         time: 0,
 
         // Game modes
         mode: {
             easy: {
                 q: 2,
-                t: 60
+                t: 30
             },
 
             normal: {
                 q: 3,
-                t: 30
+                t: 15
             },
 
             hard: {
-                q: 4,
-                t: 15
+                q: 5,
+                t: 5
             }
         },
 
         trivia: [
+            {
+                question: "Where did Spider Man first meet Captain America?",
+                answer: "Schkeuditz, Germany",
+                choices: [
+                    "Berlin, Germany", "Queens, New York", "Siberia, Russia", "Schkeuditz, Germany"
+                ],
+                image: "assets/m13-spiderman-shield.png",
+                hint: "He's definitely far from home and it's only his first movie"
+            },
+
+            {
+                question: "While Stephen Strange was stealing books from the library in his astral form, what song was Wong listening to?",
+                answer: "Single Ladies (Put a Ring on It)",
+                choices: [
+                    "Single Ladies (Put a Ring on It)", "Interstellar Overdrive", "Shining Star", "Feels So Good"
+                ],
+                image: "assets/images/m14-wong-library.PNG",
+                hint: "Dr. Strange sure likes putting his Sling Ring to use"
+            },
+
             {
                 question: "During the credits of Guardians of the Galaxy Vol. 2, which character did not show up during the film?",
                 answer: "Grandmaster",
@@ -145,6 +165,7 @@ $(document).ready(function() {
         ask: function(index) {
             // Start the timer
             quiz.start();
+            $("#timer").text(quiz.timeLeft);
 
             let trivia = quiz.trivia[quiz.sequence[index]];
             $("#question").html(trivia.question);
@@ -217,9 +238,10 @@ $(document).ready(function() {
                     $("#trivia").show();
                 } else {
                     // Shows the results
-                    $("#results").show();
+                    $("#clock").hide();
+                    $("#results, #restart").show();
                 }
-            }, 5000);
+            }, 3000);
         },
 
         // Stops the timer and gets the results.
@@ -258,5 +280,11 @@ $(document).ready(function() {
         } else {
             quiz.results("incorrect");
         }
+    });
+
+    $("#restart").on("click", function() {
+        // Restarts the game;
+        $("#results").hide();
+        $("#start").show();
     });
 });
