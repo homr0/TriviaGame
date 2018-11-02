@@ -28,6 +28,66 @@ $(document).ready(function() {
 
         trivia: [
             {
+                question: "Which Extremis user died from an explosion in Rose Hill, Tennessee?",
+                answer: "Chad Davis",
+                choices: [
+                    "Chad Davis", "Ellen Brandt", "Jack Taggart", "Michael Peterson"
+                ],
+                image: "assets/images/m7-explosion-alley.jpg",
+                hint: "It was at this site that five other people died in that alley"
+            },
+
+            {
+                question: "What realm does Thor save from the Marauders?",
+                answer: "Vanaheim",
+                choices: [
+                    "Vanaheim", "Nidavellir", "Alfheim", "Nornheim"
+                ],
+                image: "assets/images/m8-hogun-home.png",
+                hint: "Thankfully Thor saved Hogun's home from getting destroyed by the Marauders"
+            },
+
+            {
+                question: "Which one of the identified targets of Zola's algorithm was not yet known to the Avengers?",
+                answer: "Dr. Stephen Strange",
+                choices: [
+                    "Dr. Stephen Strange", "Dr. Bruce Banner", "Captain Steve Rogers", "Anthony Stark"
+                ],
+                image: "assets/images/m9-strange-banner.jpg",
+                hint: "Sometimes your biggest threats happen to be out of town while your helicarriers are flying out"
+            },
+
+            {
+                question: "How many times has Rocket Racoon been charged with escaping incarceration?",
+                answer: "14",
+                choices: [
+                    "14", "13", "7", "15"
+                ],
+                image: "assets/images/m10-rocket-lineup.jpg",
+                hint: "If you count the escape from the Kyln, the number of times he's escaped surely entitles him to a driver's permit at least."
+            },
+
+            {
+                question: "Which one of the following natural user language interfaces were not considered as a replacement after J.A.R.V.I.S. became Vision?",
+                answer: "Karen",
+                choices: [
+                    "Karen", "F.R.I.D.A.Y.", "T.A.D.A.S.H.I.", "J.O.C.A.S.T.A."
+                ],
+                image: "assets/m11-suit-lady.jpg",
+                hint: "Obviously, J.A.R.V.I.S.'s widow wasn't considered to be a replacement"
+            },
+
+            {
+                question: "What kind of art did Luis mention he preferred when he was with his cousin Ignacio?",
+                answer: "Neo-Cubism",
+                choices: [
+                    "Neo-Cubism", "Abstract Expressionism", "Neo-Expressionism", "Abstract Illusionism"
+                ],
+                image: "assets/images/m12-luis-art.PNG",
+                hint: "The Rothko was sublime enough to get Luis excited about (though it's a bit flat compared to what he prefers)"
+            },
+
+            {
                 question: "Where did Spider Man first meet Captain America?",
                 answer: "Schkeuditz, Germany",
                 choices: [
