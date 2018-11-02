@@ -31,9 +31,9 @@ $(document).ready(function() {
                 question: "Where did Spider Man first meet Captain America?",
                 answer: "Schkeuditz, Germany",
                 choices: [
-                    "Berlin, Germany", "Queens, New York", "Siberia, Russia", "Schkeuditz, Germany"
+                    "Berlin, Germany", "Leipzig, Germany", "Queens, New York", "Schkeuditz, Germany"
                 ],
-                image: "assets/m13-spiderman-shield.png",
+                image: "assets/m13-captain-america-airport.png",
                 hint: "He's definitely far from home and it's only his first movie"
             },
 
