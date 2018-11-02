@@ -58,7 +58,7 @@ $(document).ready(function() {
             },
 
             {
-                question: "Which one of the following countries surround Wakanda?",
+                question: "Which one of the following countries neighbor Wakanda?",
                 answer: "Uganda",
                 choices: [
                     "Uganda", "Egypt", "Somalia", "Ghana"
@@ -91,6 +91,7 @@ $(document).ready(function() {
         sequence: [],
         answer: "",
         timeLeft: 0,
+        current: 0,
 
         // Random number generator
         random: function(max) {
@@ -133,46 +134,48 @@ $(document).ready(function() {
         },
 
         // Starts the timer.
-        start: function(value) {
+        start: function() {
             if(!timerRunning) {
                 quiz.timeLeft = quiz.time;
                 timer = setInterval(quiz.count, 1000);
                 timerRunning = true;
-
-                let trivia = quiz.trivia[value];
-
-                // Fills in the question
-                $("#question").html(trivia.question);
-                console.log(trivia.question);
-
-                // Picks a random spot for the correct answer
-                let choices = trivia.choices;
-
-                for(let i = choices.length - 1; i > 0; i--) {
-                    let j = quiz.random((i + 1));
-                    let temp = choices[j];
-                    choices[j] = choices[i];
-                    choices[i] = temp;
-                }
-
-                // Outputs the reordered responses
-                $("#trivia .choice").each(function(key, value) {
-                    let response = choices[key];
-                    $(this).children("input").attr("value", response);
-                    $(this).children("label").html(response);
-                });
-
-                // Updates the image on the response area
-                $("#response img").attr({
-                    "src": trivia.image,
-                    "alt": trivia.hint
-                });
-
-                quiz.answer = trivia.answer;
-
-                // Shows the item
-                $("#trivia").show();
             }
+        },
+
+        ask: function(index) {
+            // Start the timer
+            quiz.start();
+
+            let trivia = quiz.trivia[quiz.sequence[index]];
+            $("#question").html(trivia.question);
+
+            // Picks a random spot for the correct answer.
+            let choices = trivia. choices;
+
+            for(let i = choices.length - 1; i > 0; i--) {
+                let j = quiz.random(i + 1);
+                let temp = choices[j];
+                choices[j] = choices[i];
+                choices[i] = temp;
+            }
+
+            // Outputs the reordered responses
+            $("#trivia .choice").each(function(key, value) {
+                let response = choices[key];
+                $(this).children("input").attr("value", response);
+                $(this).children("label").html(response);
+            });
+
+            // Updates the image on the response area
+            $("#response img").attr({
+                "src": trivia.image,
+                "alt": trivia.hint
+            });
+
+            quiz.answer = trivia.answer;
+
+            // Shows the item
+            $("#trivia").show();
         },
 
         // Displays the results from a response.
@@ -199,12 +202,19 @@ $(document).ready(function() {
             // Pauses the timer
             quiz.stop();
 
-            console.log($("[name=trivia]").val());
-                
             // Shows the response for a few seconds.
             setTimeout(function() {
                 $("#response").hide();
-                $("#trivia").show();
+
+                quiz.current++;
+                if(quiz.current < quiz.questions) {
+                    // Render next question
+                    quiz.ask(quiz.current);
+                    $("#trivia").show();
+                } else {
+                    // Shows the results
+                    $("#results").show();
+                }
             }, 5000);
         },
 
@@ -232,13 +242,8 @@ $(document).ready(function() {
         quiz.setup($(this).attr("data-mode"));
         $("#clock, #trivia").show();
         $("#start, #result").hide();
-        //quiz.generate();
-        $(quiz.sequence).each(function(key, value) {
-            // Starts the timer.       
-            quiz.start(value);
-
-            
-        });
+        quiz.current = 0;
+        quiz.ask(0);
     });
 
     // When an option is clicked, it updates the results section.
