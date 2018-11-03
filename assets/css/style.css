@@ -22,6 +22,16 @@ header .container, #game .container {
     font-size: 150%;
 }
 
+#start a {
+    color: rgba(127, 31, 31, 0.85);;
+}
+
+#start a:hover {
+    color: rgba(127, 31, 31, 0.85);
+    text-decoration: none;
+    font-weight: 700;
+}
+
 .btn.mode, #restart.btn {
     background-color: rgba(0, 159, 159, 0.6);
     color: rgba(63, 15, 15, 0.85);
