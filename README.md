@@ -1,7 +1,5 @@
 # Marvelous MCU Mayhem Trivia
 
----
-
 Welcome to Marvelous MCU Mayhem Trivia!
 
 How well do you know the Marvel Cinematic Universe?
@@ -10,14 +8,14 @@ This isn't a comprehensive quiz, but if you ended up going on a MCU movie watchi
 
 ## Instructions
 
----
-
 1. Pick a difficulty level.
+
     Difficulty | # of Questions | Seconds to Answer
     ---------- | -------------- | -----------------
     Casual Watcher | 5 | 20
     Running the Gauntlet | 10 | 10
     Die Hard Fanatic | 15 | 5
+    
 2. When the question loads, pick the option below the question that you think is correct.
 3. If your choice is *correct*, then the page will tell you so while displaying an image related to the question.
 4. If your choice is *incorrect* or if you *ran out of time*, then the page will tell you the correct answer as well as show the image.
@@ -26,8 +24,6 @@ This isn't a comprehensive quiz, but if you ended up going on a MCU movie watchi
 7. You can choose to play the quiz again.**\***
 
 **\*** Every game should have a different sequence of questions regardless of difficulty level. No two games are exactly the same as the order of questions will be randomized each time.
-
----
 
 ## Question Distribution
 
