@@ -53,7 +53,7 @@ $(document).ready(function() {
                 choices: [
                     "Peter Parker", "Harley Keener", "Cassie Lang", "Miles Morales"
                 ],
-                image: "assets/images/m3-ironman-mask.jpg",
+                image: "assets/images/m3-ironman-mask.png",
                 hint: "This kid was an early adopter of the whole superhero phenomenon"
             },
 
