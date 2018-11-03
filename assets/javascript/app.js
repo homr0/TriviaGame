@@ -331,8 +331,10 @@ $(document).ready(function() {
             // Updates the response
             if(response == "correct") {
                 $("#response h2").text("Correct!");
+                $("#correction").hide();
             } else {
                 $("#response h2").text("Nope!");
+                $("#correction").show();
             }
 
             // Hides the question area.
