@@ -12,9 +12,9 @@ This isn't a comprehensive quiz, but if you ended up going on a MCU movie watchi
 
     Difficulty | # of Questions | Seconds to Answer
     ---------- | -------------- | -----------------
-    Casual Watcher | 5 | 20
-    Running the Gauntlet | 10 | 10
-    Die Hard Fanatic | 15 | 5
+    Casual Watcher | 5 | 60
+    Running the Gauntlet | 10 | 30
+    Die Hard Fanatic | 15 | 10
 
 2. When the question loads, pick the option below the question that you think is correct.
 3. If your choice is *correct*, then the page will tell you so while displaying an image related to the question.

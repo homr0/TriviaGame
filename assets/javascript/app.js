@@ -12,17 +12,17 @@ $(document).ready(function() {
         mode: {
             easy: {
                 q: 5,
-                t: 20
+                t: 60
             },
 
             normal: {
                 q: 10,
-                t: 10
+                t: 30
             },
 
             hard: {
                 q: 15,
-                t: 5
+                t: 10
             }
         },
 
