@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    background-image: url('../images/vertical_cloth.png');
+    background-image: url('../images/gun_metal.png');
     color: rgba(63, 15, 15, 0.85);
 }
 
@@ -34,6 +34,10 @@ header .container, #game .container {
 
 #trivia [type=radio] {
     display: none;
+}
+
+#trivia label {
+    font-size: 125%;
 }
 
 #trivia [type=radio]:checked + label, #trivia [type=radio] + label:hover {
