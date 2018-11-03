@@ -11,22 +11,82 @@ $(document).ready(function() {
         // Game modes
         mode: {
             easy: {
-                q: 2,
-                t: 30
+                q: 5,
+                t: 20
             },
 
             normal: {
-                q: 3,
-                t: 15
+                q: 10,
+                t: 10
             },
 
             hard: {
-                q: 5,
+                q: 15,
                 t: 5
             }
         },
 
         trivia: [
+            {
+                question: "What part of Afghanistan did the Ten Rings kidnap Tony Stark from?",
+                answer: "Kunar",
+                choices: [
+                    "Kunar", "Gulmira", "Kandahar", "Bagram"
+                ],
+                image: "assets/images/m1-humvee-afghanistan.PNG",
+                hint: "One Humvee ride resulted in Tony Stark becoming Iron Man... after it exploded and he got wounded"
+            },
+
+            {
+                question: "What is the name of the guy on the computer in the Bruce Banner's former lab at Culver University?",
+                answer: "Computer Nerd",
+                choices: [
+                    "Computer Nerd", "Amadeus Cho", "Computer Geek", "Rick Jones"
+                ],
+                image: "assets/images/m2-computer-pizza.jpg",
+                hint: "Just a guy wearing glasses... sitting at a computer... eating pizza"
+            },
+
+            {
+                question: "Who was the kid in the Iron Man mask?",
+                answer: "Peter Parker",
+                choices: [
+                    "Peter Parker", "Harley Keener", "Cassie Lang", "Miles Morales"
+                ],
+                image: "assets/images/m3-ironman-mask.jpg",
+                hint: "This kid was an early adopter of the whole superhero phenomenon"
+            },
+
+            {
+                question: "When Thor was banished to Earth, which town did he crash near?",
+                answer: "Puente Antiguo, New Mexico",
+                choices: [
+                    "Puente Antiguo, New Mexico", "Needles, California", "Galisteo, New Mexico", "Sierra Vista, Arizona"
+                ],
+                image: "assets/images/m4-city-limit.jpg",
+                hint: "Also known as the Land of Enchantment... so Journey Into Mystery"
+            },
+
+            {
+                question: "When was Steve Rogers born?",
+                answer: "July 4, 1918",
+                choices: [
+                    "July 4, 1918", "March 10, 1917", "October 20, 1919", "August 15, 1917"
+                ],
+                image: "assets/images/m5-rogers-physical.jpg",
+                hint: "Mr. Rogers, while we appreciate your patriotism, you're not healthy enough to join the U.S. Army"
+            },
+
+            {
+                question: "What is the name of the restaurant that the Avengers ate at after the Incident?",
+                answer: "Shawarma Palace",
+                choices: [
+                    "Shawarma Palace", "Shawarma Place", "House of Shawarma", "Shawarma Space"
+                ],
+                image: "assets/images/m6-Shawarma_Palace.png",
+                hint: "Remember that awkward moment when everyone was eating shawarma?"
+            },
+
             {
                 question: "Which Extremis user died from an explosion in Rose Hill, Tennessee?",
                 answer: "Chad Davis",
@@ -34,7 +94,7 @@ $(document).ready(function() {
                     "Chad Davis", "Ellen Brandt", "Jack Taggart", "Michael Peterson"
                 ],
                 image: "assets/images/m7-explosion-alley.jpg",
-                hint: "It was at this site that five other people died in that alley"
+                hint: "With a name almost like an obnoxious frat guy, it's rather unfortunate he blew up in an alley"
             },
 
             {
@@ -54,7 +114,7 @@ $(document).ready(function() {
                     "Dr. Stephen Strange", "Dr. Bruce Banner", "Captain Steve Rogers", "Anthony Stark"
                 ],
                 image: "assets/images/m9-strange-banner.jpg",
-                hint: "Sometimes your biggest threats happen to be out of town while your helicarriers are flying out"
+                hint: "When your threats live rent free in your brain, you might need a doctor"
             },
 
             {
@@ -73,7 +133,7 @@ $(document).ready(function() {
                 choices: [
                     "Karen", "F.R.I.D.A.Y.", "T.A.D.A.S.H.I.", "J.O.C.A.S.T.A."
                 ],
-                image: "assets/m11-suit-lady.jpg",
+                image: "assets/images/m11-suit-lady.jpg",
                 hint: "Obviously, J.A.R.V.I.S.'s widow wasn't considered to be a replacement"
             },
 
@@ -93,7 +153,7 @@ $(document).ready(function() {
                 choices: [
                     "Berlin, Germany", "Leipzig, Germany", "Queens, New York", "Schkeuditz, Germany"
                 ],
-                image: "assets/m13-captain-america-airport.png",
+                image: "assets/images/m13-captain-america-airport.jpg",
                 hint: "He's definitely far from home and it's only his first movie"
             },
 
