@@ -1,6 +1,6 @@
 # Marvelous MCU Mayhem Trivia
 
-Welcome to Marvelous MCU Mayhem Trivia!
+Welcome to [Marvelous MCU Mayhem Trivia](https://homr0.github.io/TriviaGame/)!
 
 How well do you know the Marvel Cinematic Universe?
 
@@ -15,7 +15,7 @@ This isn't a comprehensive quiz, but if you ended up going on a MCU movie watchi
     Casual Watcher | 5 | 20
     Running the Gauntlet | 10 | 10
     Die Hard Fanatic | 15 | 5
-    
+
 2. When the question loads, pick the option below the question that you think is correct.
 3. If your choice is *correct*, then the page will tell you so while displaying an image related to the question.
 4. If your choice is *incorrect* or if you *ran out of time*, then the page will tell you the correct answer as well as show the image.
