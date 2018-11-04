@@ -28,5 +28,5 @@ This isn't a comprehensive quiz, but if you ended up going on a MCU movie watchi
 ## Question Distribution
 
 - **Movies:** 20
-- **Agents of S.H.I.E.L.D.:** 0
-- **Netflix TV Shows:** 0 
+- **Agents of S.H.I.E.L.D.:** 2
+- **Netflix TV Shows:** 4

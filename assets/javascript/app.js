@@ -225,6 +225,66 @@ $(document).ready(function() {
                 ],
                 image: "assets/images/m20-antman-ferry.jpg",
                 hint: "Scott says hello to all of these tourists"
+            },
+
+            {
+                question: "According to Phil Coulson, Tahiti is a _______ place.",
+                answer: "magical",
+                choices: [
+                    "magical", "wonderful", "relaxing", "peaceful"
+                ],
+                image: "assets/images/as1-tahiti.png",
+                hint: "Well, this wasn't the Tahiti he was thinking of"
+            },
+
+            {
+                question: "Whose former legal name was Mary Sue Poots?",
+                answer: "Daisy Johnson",
+                choices: [
+                    "Daisy Johnson", "Raina", "Isabelle Hartley", "Barbara Morse"
+                ],
+                image: "assets/images/as2-skye.jpg",
+                hint: "With a name like that, Skye really was a less ridiculous name"
+            },
+
+            {
+                question: "Where did Wilson Fisk first meet Vanessa Marianna?",
+                answer: "Scene Contempo Gallery",
+                choices: [
+                    "Scene Contempo Gallery", "Press Lounge Restaurant", "Van Lunt Building", "Troika Restaurant"
+                ],
+                image: "assets/images/dd1-wilson-vanessa.png",
+                hint: "Fortuitously, this was a place where they established what their interests were"
+            },
+
+            {
+                question: "Which bar did Luke Cage leave when Jessica Jones started stalking him?",
+                answer: "Luke's",
+                choices: [
+                    "Luke's", "Harlem's Paradise", "Horseshoe Bar", "Josie's Bar"
+                ],
+                image: "assets/images/jj1-lukes-bar.png",
+                hint: "Until Kilgrave blew up this place, it was a pretty nice bar"
+            },
+
+            {
+                question: "Where is Pop's Barber Shop located?",
+                answer: "179 Malcolm X Boulevard",
+                choices: [
+                    "179 Malcolm X Boulevard", "199 Malcolm X Boulevard", "47 Monroe Street", "485 W 46th Street"
+                ],
+                image: "assets/images/lc1-pops-barbershop.jpg",
+                hint: "Pop's Barber Shop brings many of the residents of Harlem together"
+            },
+
+            {
+                question: "Who did Joy Meachum hire to investigate the Rand Enterprises Board?",
+                answer: "Jessica Jones",
+                choices: [
+                    "Jessica Jones", "Matt Murdock", "Ben Ulrich", "Jeri Hogarth"
+                ],
+                image: "assets/images/if1-alias-investigating.jpg",
+                hint: "In conclusion, the investigator does a great job when sober"
             }
         ],
 
